@@ -1,0 +1,121 @@
+.slide-request {
+    background-color: var(--color-brown-5);
+
+    &__content {
+        padding: 65px 0 87px;
+        text-align: center;
+        color: var(--color-blue-1);
+    }
+
+    &__title {
+        font-size: 36px;
+    }
+
+    &__par {
+        max-width: 80vw;
+        margin: 31px auto 0;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.request-form {
+    display: flex;
+    margin-top: 80px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__input-wrapper {
+        width: 100%;
+        max-width: 335px;
+        margin-bottom: 50px;
+        position: relative;
+    }
+
+    &__input {
+        width: 100%;
+        padding-bottom: 14px;
+        border: none;
+        border-bottom: 1px solid var(--color-brown-1);
+        flex-shrink: 1;
+        font-size: 16px;
+        font-weight: 500;
+        color: var(--color-gray-2);
+        background-color: transparent;
+        outline: none;
+
+        &::placeholder {
+            color: var(--color-gray-1);
+        }
+
+        &--wrong {
+            animation: shake 0.6s cubic-bezier(.36,.07,.19,.97) both;
+            transform: translate3d(0, 0, 0);
+            backface-visibility: hidden;
+            perspective: 1000px;
+        }
+    }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@include tablet {
+
+    .slide-request {
+        background-color: var(--color-brown-4);
+    
+        &__content {
+            padding: 92px 53px 80px;
+            background-color: var(--color-brown-5);
+        }
+
+        &__par {
+            margin-top: 21px;
+            font-size: 24px;
+        }
+    }
+
+    .request-form {
+        margin-top: 92px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        &__input-wrapper {
+            margin-right: 35px;
+        }
+
+        &__input {
+            margin-right: auto;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@include desktop {
+
+    .slide-request {
+        background-color: var(--color-brown-4);
+    
+        &__content {
+            padding: 92px 99px 80px;
+        }
+    }
+}

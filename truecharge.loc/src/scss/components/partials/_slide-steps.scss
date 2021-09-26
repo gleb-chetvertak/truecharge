@@ -1,0 +1,155 @@
+.slide-steps {
+    padding-top: 58px;
+    padding-bottom: 30px;
+    color: var(--color-blue-1);
+    background-color: var(--color-brown-5);
+    background: url('../../../img/curved-arrow-3.png') center top -130px no-repeat, url('../../../img/curved-arrow-2.png') right -100px bottom 35px no-repeat, var(--color-brown-5);
+
+    &__container {
+        padding: 0;
+    }
+    
+    &__title {
+        max-width: 80vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
+.steps {
+    padding: 0 47px 0 20px;
+    margin-top: 63px;
+
+    &__cell {
+        border-right: 1px solid var(--color-blue-1);
+
+        &--last {
+            padding-bottom: 0;
+            border: none;
+        }
+    }
+
+    &__title-wrapper {
+        transform: translate3d(27px, -5px, 0);
+
+        &--right {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__par {
+        padding-right: 57px;
+        padding-bottom: 53px;
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--color-blue-1);
+    }
+
+    &__title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        transform: translateX(-27px);
+    }
+
+    &__circle {
+        display: flex;
+        width: 54px;
+        height: 54px;
+        border: 2px solid var(--color-blue-1);
+        border-radius: 50%;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        background-color: var(--color-brown-5);
+    }
+}
+
+@include tablet {
+
+    .slide-steps {
+        max-width: unset;
+        background: url('../../../img/curved-arrow-3.png') right top 25px no-repeat, url('../../../img/curved-arrow-2.png') left 40px bottom 270px no-repeat, var(--color-brown-5);
+
+    }
+
+    .steps {
+        display: grid;
+        padding-top: 94px;
+        padding-bottom: 81px;
+        margin-top: unset;
+        grid-template-columns: repeat(2, 1fr);
+
+        &__cell {
+            padding-right: unset;
+            padding-bottom: 129px;
+            border: unset;
+
+            &--left {
+                border-right: 1px solid var(--color-blue-1);
+                text-align: right;
+            }
+    
+            &--right {
+                border-left: 1px solid var(--color-blue-1);
+            }
+
+            &--last {
+                border: none;
+            }
+        }
+
+        &__title {
+            transform: unset;
+        }
+
+        &__title-wrapper {
+            justify-content: unset;
+            gap: 68px;
+    
+            &--left {
+                justify-content: flex-end;
+                transform: translate3d(36px, -5px, 0);
+            }
+    
+            &--right {
+                flex-direction: unset;
+                transform: translate3d(-36px, -5px, 0);
+            }
+        }
+
+        &__par {
+            padding-right: unset;
+            padding-bottom: unset;
+            font-size: 24px;
+
+            &--left {
+                padding-right: 103px;
+                padding-left: 20px;
+            }
+    
+            &--right {
+                padding-right: 20px;
+                padding-left: 103px;
+            }
+        }
+
+        &__circle {
+            width: 72px;
+            height: 72px;
+            font-size: 24px;
+            transform: unset;
+        }
+    }
+}
+
+@include desktop {
+
+    .slide-steps {
+        background: url('../../../img/curved-arrow-3.png') right top 65px no-repeat, url('../../../img/curved-arrow-2.png') left 135px bottom 270px no-repeat, var(--color-brown-5);
+    }
+}

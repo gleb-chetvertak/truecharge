@@ -1,0 +1,227 @@
+.slide-top {
+    display: flex;
+    min-height: 100vh;
+    background: url('../../img/top-slide-background.png') var(--color-brown-4) no-repeat right top;
+
+    &__content {
+        display: flex;
+        margin-top: 107px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__title {
+        max-width: 63vw;
+        color: var(--color-blue-1);
+    }
+}
+
+.more-button {
+    display: flex;
+    margin-top: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    color: var(--color-brown-1);
+    text-transform: uppercase;
+
+    &__image {
+        display: flex;
+        height: 54px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        transform: translate3d(-14px, -2px, 0);
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate3d(5.5px, -9px, 0);
+    }
+}
+
+.ccs {
+    height: 164px;
+    position: relative;
+
+    &__cc-blue {
+        width: 332px;
+        position: absolute;
+        top: 10px;
+        left: 65vw;
+    }
+
+    &__cc-red {
+        width: 178px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    &__moneydove-1 {
+        width: 56px;
+        position: absolute;
+        top: -5px;
+        left: 57vw;
+    }
+
+    &__moneydove-2 {
+        width: 29px;
+        position: absolute;
+        top: 100px;
+        left: 81px;
+    }
+
+    &__moneydove-3 {
+        width: 93px;
+        position: absolute;
+        top: 199px;
+        left: 75vw;
+    }
+
+    &__moneydove-4 {
+        display: none;
+    }
+}
+
+@include tablet {
+
+    .slide-top {
+
+        &__content {
+            margin-top: 200px;
+            flex-direction: row;
+        }
+
+        &__title {
+            max-width: unset;
+        }
+    }
+
+    .ccs {
+        width: 362px;
+        height: 263px;
+        order: 1;
+
+        &__cc-blue {
+            width: 255px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: unset;
+            left: unset;
+        }
+    
+        &__cc-red {
+            width: 255px;
+            position: absolute;
+            top: unset;
+            right: unset;
+            bottom: 0;
+            left: 0;
+        }
+    
+        &__moneydove-1 {
+            width: 52px;
+            position: absolute;
+            top: 18px;
+            right: 241px;
+            bottom: unset;
+            left: unset;
+        }
+    
+        &__moneydove-2 {
+            width: 85px;
+            position: absolute;
+            top: unset;
+            right: unset;
+            bottom: 58px;
+            left: -24px;
+        }
+    
+        &__moneydove-3 {
+            width: 54px;
+            position: absolute;
+            top: 178px;
+            right: unset;
+            bottom: unset;
+            left: 281px;
+        }
+    
+        &__moneydove-4 {
+            display: block;
+            width: 43px;
+            position: absolute;
+            top: unset;
+            right: 195px;
+            bottom: -30px;
+            left: unset;
+        }
+    }
+}
+
+@include desktop {
+
+    .ccs {
+        width: 464px;
+        height: 337px;
+
+        &__cc-blue {
+            width: unset;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: unset;
+            left: unset;
+        }
+    
+        &__cc-red {
+            width: unset;
+            position: absolute;
+            top: unset;
+            right: unset;
+            bottom: 0;
+            left: 0;
+        }
+    
+        &__moneydove-1 {
+            width: 66px;
+            position: absolute;
+            top: 24px;
+            right: 310px;
+            bottom: unset;
+            left: unset;
+        }
+    
+        &__moneydove-2 {
+            width: 110px;
+            position: absolute;
+            top: unset;
+            right: unset;
+            bottom: 74px;
+            left: -32px;
+        }
+    
+        &__moneydove-3 {
+            width: 70px;
+            position: absolute;
+            top: 228px;
+            right: unset;
+            bottom: unset;
+            left: 361px;
+        }
+    
+        &__moneydove-4 {
+            width: 55px;
+            position: absolute;
+            top: unset;
+            right: 250px;
+            bottom: -40px;
+            bottom: unset;
+        }
+    }
+}

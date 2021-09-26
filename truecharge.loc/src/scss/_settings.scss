@@ -1,0 +1,106 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", Helvetica, serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  user-select: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    border: none;
+    background: unset;
+    cursor: pointer;
+}
+
+.is-outer {
+  position: relative !important; // stylelint-disable-line declaration-no-important
+  left: -9999px !important; // stylelint-disable-line declaration-no-important
+}
+
+.site-container {
+  overflow: hidden;
+}
+
+.is-hidden {
+  display: none !important; // stylelint-disable-line declaration-no-important
+}
+
+.for-mobile {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.btn-reset {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  &,
+  &:focus {
+      outline: none;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+@include tablet {
+
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@include desktop {
+
+    .container {
+    
+        &--wide {
+            max-width: 1250px;
+        }
+    }
+}

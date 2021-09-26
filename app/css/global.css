@@ -1,0 +1,129 @@
+:root {
+  --color-white: #fff;
+  --color-blue-1: #0A3880;
+  --color-blue-2: #0D459E;
+  --color-brown-1: #9E6A57;
+  --color-brown-2: #7D5547;
+  --color-brown-3: #614236;
+  --color-brown-4: #FCF7E9;
+  --color-brown-5: #F4EFE0;
+  --color-gray-1: #7D7D7D;
+  --color-gray-2: #2D2D2D;
+  --color-red-1: #f57f6c; }
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0;
+  font-family: "Montserrat", Helvetica, serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
+  body::-webkit-scrollbar {
+    display: none; }
+
+img {
+  max-width: 100%; }
+
+a {
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+button {
+  border: none;
+  background: unset;
+  cursor: pointer; }
+
+.is-outer {
+  position: relative !important;
+  left: -9999px !important; }
+
+.site-container {
+  overflow: hidden; }
+
+.is-hidden {
+  display: none !important; }
+
+.for-mobile {
+  display: none; }
+  @media (min-width: 375px) {
+    .for-mobile {
+      display: block; } }
+
+.btn-reset {
+  border: none;
+  background: transparent;
+  cursor: pointer; }
+  .btn-reset, .btn-reset:focus {
+    outline: none; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1200px; }
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none; }
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 40px; } }
+
+@media (min-width: 1366px) {
+  .container--wide {
+    max-width: 1250px; } }
+
+h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 600; }
+
+h2 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 600; }
+
+h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600; }
+
+h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600; }
+
+h5 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 500; }
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 48px; }
+  h2 {
+    font-size: 48px; }
+  h3 {
+    font-size: 36px; }
+  h4 {
+    font-size: 24px; } }
+
+/*# sourceMappingURL=global.css.map */

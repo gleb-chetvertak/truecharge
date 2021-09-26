@@ -1,0 +1,17 @@
+// Mixins
+@import "mixins";
+
+// Components
+@import "./components/components/button";
+
+// Layout
+@import "./components/partials/slide-top";
+@import "./components/partials/header";
+@import "./components/partials/slide-issue";
+@import "./components/partials/slide-overlay";
+@import "./components/partials/slide-chargeback";
+@import "./components/partials/slide-steps";
+@import "./components/partials/slide-specialists";
+@import "./components/partials/slide-conditions";
+@import "./components/partials/slide-request";
+@import "./components/partials/footer";

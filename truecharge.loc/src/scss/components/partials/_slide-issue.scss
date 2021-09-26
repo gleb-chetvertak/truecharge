@@ -1,0 +1,49 @@
+.slide-issue {
+    padding: 64px 0 100px;
+    color: var(--color-white);
+    background-color: var(--color-blue-1);
+
+    &__container {
+        position: relative;
+    }
+
+    &__content {
+        display: grid;
+        row-gap: 66px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__par {
+        font-size: 18px;
+
+        &--short {
+            max-width: 458px;
+        }
+    }
+}
+
+@include tablet {
+
+    .slide-issue {
+        padding-top: 74px;
+        
+        &__content {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 32px;
+            row-gap: unset;
+        }
+    }
+}
+
+@include desktop {
+
+    .slide-issue {
+        
+        &__content {
+            column-gap: 83px;
+        }
+    }
+}
